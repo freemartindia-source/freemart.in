@@ -1,16 +1,178 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FreeMart — Free Tools, AI Resources & Smart Deals</title><meta name="description" content="Discover useful free online tools, AI resources, business tools, design resources, software and smart deals at FreeMart."><meta name="robots" content="index,follow"><link rel="canonical" href="https://freemart.in/"><link rel="stylesheet" href="styles.css"></head><body>
-<header><div class="nav wrap"><a class="brand" href="index.html"><b>F</b> FreeMart</a><nav><a href="#tools">Tools</a><a href="#categories">Categories</a><a href="#guides">Guides</a><a href="#deals">Deals</a></nav></div></header>
-<main><section class="hero"><div class="wrap hero-grid"><div><small>FREE RESOURCES • WORLDWIDE</small><h1>Find useful tools.<br><em>Save time & money.</em></h1><p>FreeMart brings useful free online tools, AI resources, business helpers, learning resources and deals together in one simple place.</p><div class="search"><input id="search" placeholder="Search tools, guides, resources..."><button onclick="filterTools()">Search</button></div><div class="quick">Popular: <button onclick="quick('AI')">AI</button><button onclick="quick('PDF')">PDF</button><button onclick="quick('Resume')">Resume</button><button onclick="quick('Design')">Design</button></div></div><aside><strong>⚡ FreeMart Picks</strong><p>Practical resources you can use today.</p><ul><li>Free online utilities</li><li>AI productivity resources</li><li>Business & marketing tools</li><li>Guides and money-saving deals</li></ul></aside></div></section>
-<section id="categories" class="section wrap"><small>EXPLORE</small><h2>Browse categories</h2><div class="cats"><a href="#tools">🤖 <b>AI Tools</b><span>Work smarter</span></a><a href="#tools">💼 <b>Business</b><span>Grow your work</span></a><a href="#tools">🎨 <b>Design</b><span>Create better</span></a><a href="#tools">📚 <b>Education</b><span>Learn freely</span></a><a href="#tools">💻 <b>Software</b><span>Useful apps</span></a><a href="#tools">📱 <b>Social Media</b><span>Publish smarter</span></a></div></section>
-<section id="tools" class="section gray"><div class="wrap"><small>DIRECTORY</small><h2>Useful resources</h2><div id="grid" class="grid">
-<article data-text="ai writing content productivity"><span>🤖</span><h3>AI Writing Helpers</h3><p>Practical AI resources for writing and productivity.</p><a href="tools.html">Explore →</a></article>
-<article data-text="pdf convert compress merge document"><span>📄</span><h3>PDF Tools</h3><p>Resources for common PDF and document tasks.</p><a href="tools.html">Explore →</a></article>
-<article data-text="resume cv jobs career"><span>🧾</span><h3>Resume Resources</h3><p>Helpful resources for creating a professional resume.</p><a href="tools.html">Explore →</a></article>
-<article data-text="design graphics templates marketing"><span>🎨</span><h3>Design Resources</h3><p>Resources for graphics, social posts and marketing.</p><a href="tools.html">Explore →</a></article>
-<article data-text="study education learning students"><span>🎓</span><h3>Study Resources</h3><p>Useful learning resources for students and learners.</p><a href="tools.html">Explore →</a></article>
-<article data-text="social instagram facebook marketing content"><span>📣</span><h3>Social Media</h3><p>Resources for planning and improving social content.</p><a href="tools.html">Explore →</a></article>
-</div></div></section>
-<section id="guides" class="section wrap"><small>LEARN</small><h2>Latest guides</h2><div class="grid articles"><article><small>GUIDE</small><h3>How to choose the right free online tool</h3><p>What to check before trusting a tool with your files or data.</p><a href="guides.html">Read guide →</a></article><article><small>AI</small><h3>Practical ways to use AI for small business</h3><p>Ideas for content, research, planning and productivity.</p><a href="guides.html">Read guide →</a></article><article><small>MONEY</small><h3>How FreeMart deals and affiliate links work</h3><p>A transparent explanation of recommendations and commissions.</p><a href="guides.html">Read guide →</a></article></div></section>
-<section id="deals" class="section gray"><div class="wrap deal"><div><small>SMART SAVINGS</small><h2>Deals & offers</h2><p>Verified offers and useful discounts will be added as the directory grows.</p></div><a class="btn" href="deals.html">View deals →</a></div></section>
-<section class="newsletter"><div class="wrap"><small>FREE WEEKLY UPDATE</small><h2>Useful resources, without the noise.</h2><p>Join the FreeMart list for new tools, guides and selected deals.</p><form onsubmit="event.preventDefault();alert('Newsletter signup will be connected in the next phase.');"><input type="email" required placeholder="Your email address"><button>Join Free</button></form></div></section></main>
-<footer><div class="wrap foot"><div><a class="brand" href="index.html"><b>F</b> FreeMart</a><p>Useful free resources for everyone.</p></div><div><h4>Explore</h4><a href="tools.html">Tools</a><a href="guides.html">Guides</a><a href="deals.html">Deals</a></div><div><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div><div><h4>Legal</h4><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a><a href="affiliate-disclosure.html">Affiliate Disclosure</a></div></div><div class="wrap copy">© 2026 FreeMart.in. All rights reserved.</div></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FreeMart — A Directory of Free Tools, AI Resources & Real Deals</title>
+<meta name="description" content="FreeMart is a hand-curated directory of genuinely free tools, AI resources, and verified deals — no signup walls, no fake freemium traps.">
+<link rel="canonical" href="https://freemart.in/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">Free<span>Mart</span></a>
+    <nav class="navlinks">
+      <a href="tools.html">Tools</a>
+      <a href="deals.html">Deals</a>
+      <a href="guides.html">Guides</a>
+      <a href="about.html">About</a>
+    </nav>
+    <button class="navtoggle" aria-label="Menu">Menu</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Free tools worth your time.</h1>
+      <p>Every day someone launches a "free" tool that's really a signup wall. FreeMart is the list of the ones that actually aren't — tested, categorized, and kept current.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="tools.html">Browse the directory</a>
+        <a class="btn btn-outline" href="guides.html">Read the guides</a>
+      </div>
+    </div>
+    <div class="ledger">
+      <h3>In the directory</h3>
+      <ul>
+        <li><span>AI &amp; writing</span><span class="count">3 picks</span></li>
+        <li><span>PDF &amp; documents</span><span class="count">3 picks</span></li>
+        <li><span>Design &amp; images</span><span class="count">3 picks</span></li>
+        <li><span>Resume building</span><span class="count">3 picks</span></li>
+        <li><span>Study &amp; learning</span><span class="count">3 picks</span></li>
+        <li><span>Social media</span><span class="count">3 picks</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Browse by category</h2>
+      <a href="tools.html">See all →</a>
+    </div>
+    <div class="cat-grid">
+      <a class="cat" href="tools.html#ai">
+        <h3>AI &amp; Writing</h3>
+        <p>Draft, research and edit faster.</p>
+      </a>
+      <a class="cat" href="tools.html#pdf">
+        <h3>PDF &amp; Documents</h3>
+        <p>Convert, compress, merge, sign.</p>
+      </a>
+      <a class="cat" href="tools.html#design">
+        <h3>Design &amp; Images</h3>
+        <p>Edit photos and build graphics.</p>
+      </a>
+      <a class="cat" href="tools.html#resume">
+        <h3>Resume Building</h3>
+        <p>Templates that pass the scan.</p>
+      </a>
+      <a class="cat" href="tools.html#study">
+        <h3>Study &amp; Learning</h3>
+        <p>Free courses and practice tools.</p>
+      </a>
+      <a class="cat" href="tools.html#social">
+        <h3>Social Media</h3>
+        <p>Plan, schedule, publish.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>A few to start with</h2>
+      <a href="tools.html">Full directory →</a>
+    </div>
+    <div class="tool-list">
+      <a class="tool" href="https://chat.openai.com" target="_blank" rel="noopener">
+        <div><div class="tool-name">ChatGPT</div><div class="tool-desc">Free-tier AI for writing, research and brainstorming.</div></div>
+        <span class="tool-arrow">↗</span>
+      </a>
+      <a class="tool" href="https://www.ilovepdf.com" target="_blank" rel="noopener">
+        <div><div class="tool-name">iLovePDF</div><div class="tool-desc">Merge, split, compress and convert PDFs free.</div></div>
+        <span class="tool-arrow">↗</span>
+      </a>
+      <a class="tool" href="https://www.canva.com" target="_blank" rel="noopener">
+        <div><div class="tool-name">Canva</div><div class="tool-desc">Design posts, resumes and presentations, free tier.</div></div>
+        <span class="tool-arrow">↗</span>
+      </a>
+      <a class="tool" href="https://www.remove.bg" target="_blank" rel="noopener">
+        <div><div class="tool-name">Remove.bg</div><div class="tool-desc">Strip image backgrounds in one click, free.</div></div>
+        <span class="tool-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Latest guides</h2>
+      <a href="guides.html">All guides →</a>
+    </div>
+    <div class="guide-list">
+      <a class="guide" href="guides.html#choosing">
+        <div class="guide-tag">Guide</div>
+        <div><h3>How to choose a free online tool</h3><p>What to check before trusting a tool with your files or data.</p></div>
+      </a>
+      <a class="guide" href="guides.html#ai-business">
+        <div class="guide-tag">AI</div>
+        <div><h3>Practical ways to use AI for small business</h3><p>Ideas for content, research, planning and productivity — no budget required.</p></div>
+      </a>
+      <a class="guide" href="guides.html#affiliate">
+        <div class="guide-tag">Money</div>
+        <div><h3>How FreeMart's deals and affiliate links work</h3><p>A plain explanation of recommendations and commissions.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="newsletter">
+  <div class="wrap">
+    <div>
+      <h2>One email, when there's something worth sending.</h2>
+      <p>New tools, verified deals and the odd guide. No noise, no daily digest.</p>
+    </div>
+    <form class="newsform" action="#" method="post">
+      <input type="email" placeholder="you@email.com" required aria-label="Email address">
+      <button type="submit">Join free</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <a class="logo" href="index.html">Free<span style="color:var(--gold);">Mart</span></a>
+        <p style="color:var(--ink-soft);font-size:.9rem;max-width:32ch;margin-top:10px;">A hand-curated directory of free tools and verified deals.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="tools.html">Tools</a>
+        <a href="guides.html">Guides</a>
+        <a href="deals.html">Deals</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 FreeMart.in. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
