@@ -1,38 +1,43 @@
-# FreeMart — Shop India by Region
+# FreeMart.in — Ecommerce Starter
 
-A standalone responsive ecommerce storefront redesign for freemart.in.
+A responsive FreeMart.in storefront for regional Indian products.
 
 ## Included
-- Responsive homepage
-- Shop by Region
-- Shop by Category
-- Featured products with filters
-- Product detail modal
-- Search
-- Local cart using browser localStorage
-- Newsletter form UI
-- Artisan/region storytelling section
-- Mobile-friendly layout
+- Home, Shop, Regions, Categories, Gifts
+- Product detail pages
+- Search, region/category filters, sorting
+- Wishlist
+- Cart + quantity management
+- Checkout UI + local demo order history
+- Account/order page
+- About, FAQ, policies/contact placeholders
+- Admin dashboard starter
+- 30 catalogue products across 10 regions
+- Express + SQLite API starter for products/orders
+- Razorpay integration point prepared for server-side implementation
 
-## Files
-- index.html
-- styles.css
-- script.js
+## Run frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+Open the Vite URL shown in the terminal.
 
-## Deploy to GitHub Pages
-1. Upload these files to your existing repository.
-2. Keep `index.html` at the repository root.
-3. Commit and push.
-4. In GitHub: Settings → Pages → deploy from your branch.
-5. Point `freemart.in` to the GitHub Pages site using your existing custom-domain configuration.
+## Run backend
+```bash
+cd backend
+npm install
+copy .env.example .env
+npm run dev
+```
+API: http://localhost:5000/api/health
 
-## Before going live
-Replace demo product data/images with your actual products and connect:
-- Product database / backend
-- Payment gateway (Razorpay, etc.)
-- Order management
-- Shipping provider
-- Customer login
-- Admin product management
-
-The current checkout button is intentionally a placeholder so no real payment is taken.
+## Before real launch
+1. Replace demo product art with licensed product photographs.
+2. Verify each artisan, GI and ODOP claim with authoritative source documentation.
+3. Finalize GST/business details, shipping/return/privacy/terms.
+4. Connect frontend checkout to backend order API.
+5. Add Razorpay server-side order creation, signature verification and webhook handling.
+6. Add authentication, customer database and transactional email.
+7. Configure backups, HTTPS, domain and production environment.
